@@ -1,0 +1,27 @@
+{% extends 'base.html'  %}
+
+{% block content %}
+
+    <form method="post">
+        {% csrf_token %}
+
+        <div>
+            <label for="full_name">Full name:</label>
+            <input type="text" id="full_name" name="full_name" placeholder="Ismingiz" required>
+        </div>
+        <br><br>
+        <div>
+            <label for="birthday">Birthday:</label>
+            <input type="text" id="birthday" name="birthday" placeholder="YYYY-MM-DD" required>
+        </div>
+        <br><br>
+        <div>
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" placeholder="Davlat" required>
+        </div>
+
+       <br><br>
+        <button type="submit" class="btn btn-primary">Saqlash</button>
+    </form>
+
+{% endblock %}

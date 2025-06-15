@@ -1,0 +1,14 @@
+
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<form method="post">
+    {% csrf_token %}
+    <h4>Rostan ham <strong style="color: red">{{ author.full_name }}</strong> ni o'chirmoqchimisiz</h4>
+    <button class="btn btn-danger">delate</button>
+    <a class="btn btn-primary" href="{% url 'author-list' %}" >Back</a>
+</form>
+
+{% endblock %}

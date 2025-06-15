@@ -1,0 +1,32 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">full_name</th>
+      <th scope="col">birthday</th>
+      <th scope="col">country</th>
+      <th scope="col">Update</th>
+      <th scope="col">Delate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">{{ forloop.counter}}</th>
+      <td>{{ author.full_name }}</td>
+      <td>{{ author.birthday }}</td>
+      <td>{{ author.country }}</td>
+      <td><a href="{% url 'author-update' author.pk %}">Update</a></td>
+      <td><a href="{% url 'author-delete' author.pk %}">Delate</a></td>
+    </tr>
+
+  </tbody>
+
+</table>
+
+{% endblock %}
