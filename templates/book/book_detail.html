@@ -12,6 +12,8 @@
       <th scope="col">title</th>
       <th scope="col">description</th>
       <th scope="col">price</th>
+      <th scope="col">image</th>
+      <th scope="col">file</th>
       <th scope="col">Update</th>
       <th scope="col">Delete</th>
     </tr>
@@ -24,6 +26,20 @@
       <td>{{ books.title }}</td>
       <td>{{ books.description }}</td>
       <td>{{ books.price }}</td>
+      <td>
+        {% if books.image %}
+            <img src="{{ books.image.url }}" alt="{{ books.title }}" width="100" height="80">
+        {% else %}
+            <p>Rasm yuklanmagan</p>
+        {% endif %}
+      </td>
+      <td>
+        {% if books.file %}
+        <a href="{{ books.file.url }}">Upload</a>
+        {% else %}
+            <p>File yuklanmagan</p>
+        {% endif %}
+      </td>
       <td><a href="{% url 'update-book' books.pk %}">Update</a></td>
       <td><a href="{% url 'delete-book' books.pk %}">Delete</a></td>
     </tr>

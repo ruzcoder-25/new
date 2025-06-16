@@ -5,21 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5377de55-f470-46db-a03f-2e5708d9514c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/book/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/author/author_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/author/author_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/author/author_update.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/author/creatte_author.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/author/delete_author.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/book/book_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/book/book_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/book/create_book.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/book/delete_book.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/book/update_book.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/account/login_view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/account/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/book/pagination.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/book/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/book/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/author/author_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/author/author_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/author/author_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/author/author_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/author/author_update.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/author/author_update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/author/creatte_author.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/author/creatte_author.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/book/book_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/book/book_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/book/book_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/book/book_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/book/create_book.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/book/create_book.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/book/update_book.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/book/update_book.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,9 +43,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2yXQ5NS06CUdoUt3LetR6PgLuFy" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -48,27 +54,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Ruzimukhammad/PycharmProjects/Start_django_side&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -77,6 +85,7 @@
       </set>
     </attachedChunks>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="5377de55-f470-46db-a03f-2e5708d9514c" name="Changes" comment="" />
@@ -84,11 +93,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1749978254897</updated>
-      <workItem from="1749978256252" duration="17717000" />
+      <workItem from="1749978256252" duration="18811000" />
+      <workItem from="1750065287440" duration="18670000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/book/views.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

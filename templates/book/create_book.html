@@ -1,35 +1,12 @@
+
 {% extends 'base.html' %}
 
 {% block content %}
 
-    <form method="post">
-        {% csrf_token %}
-        <div>
-            <label for="author">Author:</label>
-            <select id="author" name="author" required>
-                <option value="">Muallifni tanlang...</option>
-                {% for author in authors %}
-                    <option value="{{ author.id }}">{{ author.full_name }}</option>
-                {% endfor %}
-            </select>
-        </div>
-        <br>
-        <div>
-            <label for="title">Title:</label>
-            <input type="text" id="title" name="title" required>
-        </div>
-        <br>
-        <div>
-            <label for="description">Description:</label>
-            <input type="text" id="description" name="description" required>
-        </div>
-        <br>
-        <div>
-            <label for="price">Price:</label>
-            <input type="number" id="price" name="price" step="0.01" min="0" required>
-        </div>
-        <br>
-        <button type="submit" class="btn btn-primary">Saqlash</button>
-    </form>
 
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button class="btn btn-primary">Send</button>
+</form>
 {% endblock %}

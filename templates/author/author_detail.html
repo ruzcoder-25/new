@@ -11,6 +11,8 @@
       <th scope="col">full_name</th>
       <th scope="col">birthday</th>
       <th scope="col">country</th>
+      <th scope="col">Picture</th>
+      <th scope="col">Authobiography</th>
       <th scope="col">Update</th>
       <th scope="col">Delate</th>
     </tr>
@@ -21,6 +23,20 @@
       <td>{{ author.full_name }}</td>
       <td>{{ author.birthday }}</td>
       <td>{{ author.country }}</td>
+      <td>
+        {% if author.photo %}
+            <img src="{{ author.photo.url }}" alt="{{ author.full_name }}" width="100">
+        {% else %}
+            <p>Rasm mavjud emas</p>
+        {% endif %}
+      </td>
+      <td>
+        {% if author.biography %}
+            <a href="{{ author.biography.url }}">Biografiyani ko‘rish</a>
+        {% else %}
+            <p>Biografiya mavjud emas</p>
+        {% endif %}
+      </td>
       <td><a href="{% url 'author-update' author.pk %}">Update</a></td>
       <td><a href="{% url 'author-delete' author.pk %}">Delate</a></td>
     </tr>
