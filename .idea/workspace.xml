@@ -5,27 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5377de55-f470-46db-a03f-2e5708d9514c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/account/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/account/login_view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/account/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/book/pagination.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/book/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/book/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/author/author_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/author/author_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/author/author_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/author/author_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/author/author_update.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/author/author_update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/author/creatte_author.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/author/creatte_author.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/book/book_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/book/book_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/book/book_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/book/book_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/book/create_book.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/book/create_book.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/book/update_book.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/book/update_book.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1749978254897</updated>
       <workItem from="1749978256252" duration="18811000" />
-      <workItem from="1750065287440" duration="18670000" />
+      <workItem from="1750065287440" duration="19886000" />
     </task>
     <servers />
   </component>
