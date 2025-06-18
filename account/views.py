@@ -1,5 +1,5 @@
 from django.contrib.auth import login, logout
-from django.contrib.auth.models import User
+from account.models import CustomUser
 from django.shortcuts import render, redirect
 
 from account.forms import RegisterForm, LoginForm
@@ -9,6 +9,9 @@ def register(request):
     if request.method == 'POST':
         form = RegisterForm(request.POST)
         if form.is_valid():
+            # password=form.cleaned_data.get('password')
+            # user = form.save(commit=False)
+            # user.set_password(password)
             form.save()
             return redirect('login-view')
     else:
@@ -23,7 +26,7 @@ def login_view(request):
         form = LoginForm(request.POST)
         if form.is_valid():
             username = form.cleaned_data['username']
-            user = User.objects.filter(username=username).first()
+            user = CustomUser.objects.filter(username=username).first()
             if user is not None:
                 login(request, user)
                 return redirect('book-list')

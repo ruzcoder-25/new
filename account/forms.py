@@ -1,21 +1,24 @@
 from django import forms
 from django.contrib.auth.models import User
 
+from account.models import CustomUser
+
 
 class RegisterForm(forms.ModelForm):
     class Meta:
-        model = User
+        model = CustomUser
         fields = [
             'username',
             'first_name',
             'last_name',
+            'phone_number',
             'email',
             'password',
         ]
 
 
     def save(self, commit=True):
-        return User.objects.create_user(
+        return CustomUser.objects.create_user(
             username=self.cleaned_data.get('username'),
             first_name=self.cleaned_data.get('first_name'),
             last_name=self.cleaned_data.get('last_name'),

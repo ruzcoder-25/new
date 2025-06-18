@@ -39,10 +39,18 @@
         {% else %}
             <p>File yuklanmagan</p>
         {% endif %}
+      {% if request.user.is_authenticated %}
       </td>
       <td><a href="{% url 'update-book' books.pk %}">Update</a></td>
       <td><a href="{% url 'delete-book' books.pk %}">Delete</a></td>
+
+    {% else %}
+
+      <td>Kechirasiz siz registratsiyadan o'tmagansiz</td>
+      <td>Kechirasiz siz registratsiyadan o'tmagansiz</td>
+
     </tr>
+{% endif %}
 
   </tbody>
 </table>
