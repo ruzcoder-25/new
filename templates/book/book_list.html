@@ -9,6 +9,8 @@
 <br><br>
 {% else %}
 
+<a href="{% url 'transaction-post' %}">Transaction</a>
+<br><br>
 <a href="{% url 'logout-view' %}">Logout</a>
 <br><br>
 <h1> hush kelibsiz {{ user.username }}</h1>

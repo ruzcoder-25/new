@@ -1,8 +1,11 @@
 from django.contrib.auth import login, logout
+from django.db import transaction
+from django.http import HttpResponse
+
 from account.models import CustomUser
 from django.shortcuts import render, redirect
 
-from account.forms import RegisterForm, LoginForm
+from account.forms import RegisterForm, LoginForm, TransactionForm
 
 
 def register(request):
@@ -41,3 +44,32 @@ def logout_view(request):
     logout(request)
     return redirect('book-list')
 
+# transaction
+
+def user_list(request):
+    users = CustomUser.objects.all()
+    return render(request,'account/user_list.html',{'users':users,})
+
+@transaction.atomic
+def transaction_post(request):
+    if request.method=='POST':
+        form = TransactionForm(request.POST)
+        if form.is_valid():
+            from_user = form.cleaned_data['from_user']
+            to_user = form.cleaned_data['to_user']
+            amount = form.cleaned_data['amount']
+            fu = CustomUser.objects.filter(username=from_user).first()
+            tu = CustomUser.objects.filter(username=to_user).first()
+
+            if fu.balance<amount:
+                return HttpResponse("Balansda yetarli mablag' mavjud emas")
+
+            fu.balance -= amount
+            fu.save()
+            tu.balance += amount
+            tu.save()
+
+            return redirect('user-list')
+
+    form = TransactionForm()
+    return render(request,'account/transaction_post.html',{'form':form,})
