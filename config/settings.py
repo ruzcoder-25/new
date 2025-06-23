@@ -126,3 +126,19 @@ MEDIA_ROOT = BASE_DIR / 'media'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'account.CustomUser'
+
+
+
+# Qo'shimcha
+
+GOOGLE_CLIENT_ID = "294918675297-e8nj2gte02dpgi97i20nat4etg923d8k.apps.googleusercontent.com"
+
+GOOGLE_CLIENT_SECRET = "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"
+
+GOOGLE_REDIRECT_URI = 'http://localhost:8000/account+/google/login/callback/'
+
+GOOGLE_AUTH_URL = "https://accounts.google.com/o/oauth2/auth"
+
+GOOGLE_USER_INFO_URL = "https://www.googleapis.com/oauth2/v1/userinfo"
+
+GOOGLE_TOKEN_URL = "https://oauth2.googleapis.com/token"

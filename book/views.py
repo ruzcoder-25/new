@@ -3,7 +3,7 @@ from django.db.models import Q
 from django.shortcuts import render, redirect
 from book.forms import BookForm, AuthorForm
 from book.models import Book, Author
-from account.utils import check_user
+from account.utils import check_user, admin_required
 from django.contrib.auth.decorators import login_required
 #
 #
@@ -147,6 +147,7 @@ def book_list(request):
         'book':book,
     }
     return render(request,'book/book_list.html',context)
+@admin_required
 @check_user
 def create_book(request):
     author = Author.objects.all()
@@ -199,7 +200,7 @@ def author_list(request):
     author = Author.objects.all()
     return render(request, 'author/author_list.html', {'author': author})
 
-
+@admin_required
 def create_author(request):
     author = None
     if request.method == "POST":

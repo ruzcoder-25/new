@@ -2,6 +2,8 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<a href="{% url 'register-list' %}">user_list</a>
+<br><br>
 {% if not user.is_authenticated %}
 <a href="{% url 'register' %}">Resister</a>
 <br><br>

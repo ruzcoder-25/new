@@ -73,3 +73,7 @@ def transaction_post(request):
 
     form = TransactionForm()
     return render(request,'account/transaction_post.html',{'form':form,})
+
+def register_list(request):
+    user = CustomUser.objects.all()
+    return render(request,'account/register_list.html',{'users':user,})
